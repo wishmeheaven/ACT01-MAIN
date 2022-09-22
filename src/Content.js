@@ -9,12 +9,16 @@ const Content = () => {
         const int = Math.floor(Math.random() * 3);
         setName(names[int]);
     }
-    
+
     const handleClick = () => {
       setCount(count +1)
       setCount(count +1)
         console.log(count)
     }
+
+    // value of the current state after the first two count+1 calls -
+    // won't change in the console because it simply shows
+    // the value that was passed into the function
     const handleClick2 = () => {
         console.log(count)
     }
